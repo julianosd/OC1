@@ -29,3 +29,5 @@ data sicoobsp.vendasprodutos;
 	merge vendas_produtos produtos_produtos;
 	by  CodProduto;
 run;
+
+
