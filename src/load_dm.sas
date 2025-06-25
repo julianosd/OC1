@@ -15,12 +15,13 @@
 * 
 
 */
-%include "/opt/sas/Workshop/Git/OC1/src/libraries.sas";
+
 %include "/opt/sas/Workshop/Git/OC1/macro/macrovars.sas";
+%include "&caminho/src/libraries.sas";
 proc import 
 	datafile="&caminho/outputs/DM1.xlsx"
 	dbms = xlsx 
-	out  = sicoob.vendas4;
+	out  = sicoob.vendas5;
 	sheet= vendas;
 run;
 
@@ -28,6 +29,6 @@ run;
 proc import 
 	datafile="&caminho/outputs/DM1.xlsx"
 	dbms = xlsx 
-	out  = sicoob.produtos4;
+	out  = sicoob.produtos5;
 	sheet= produtos;
 run;
