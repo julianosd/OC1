@@ -15,14 +15,19 @@
 * 
 
 */
-%include "&caminho/src/libraries.sas";
+%include "/opt/sas/Workshop/Git/OC1/src/libraries.sas";
 %include "/opt/sas/Workshop/Git/OC1/macro/macrovars.sas";
 proc import 
-	datafile="&caminho/output/DM1.xlsx"
+	datafile="&caminho/outputs/DM1.xlsx"
 	dbms = xlsx 
-	out  = sicoob.vendas;
+	out  = sicoob.vendas4;
 	sheet= vendas;
 run;
 
 
-/*/home/Jacques/Workshop/Git/OC1/outputs/DM1.xlsx
+proc import 
+	datafile="&caminho/outputs/DM1.xlsx"
+	dbms = xlsx 
+	out  = sicoob.produtos4;
+	sheet= produtos;
+run;
