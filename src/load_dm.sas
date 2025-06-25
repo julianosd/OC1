@@ -21,7 +21,7 @@
 proc import 
 	datafile="&caminho/outputs/DM1.xlsx"
 	dbms = xlsx 
-	out  = sicoob.vendas5;
+	out  = sicoob.vendas replace;
 	sheet= vendas;
 run;
 
@@ -29,6 +29,48 @@ run;
 proc import 
 	datafile="&caminho/outputs/DM1.xlsx"
 	dbms = xlsx 
-	out  = sicoob.produtos5;
+	out  = sicoob.produtos replace;
 	sheet= produtos;
+run;
+
+proc import 
+	datafile="&caminho/outputs/DM1.xlsx"
+	dbms = xlsx 
+	out  = sicoob.deptos  replace;
+	sheet= deptos;
+run;
+
+proc import 
+	datafile="&caminho/outputs/DM1.xlsx"
+	dbms = xlsx 
+	out  = sicoob.grupos replace;
+	sheet= grupos;
+run;
+
+proc import 
+	datafile="&caminho/outputs/DM1.xlsx"
+	dbms = xlsx 
+	out  = sicoob.cores replace;
+	sheet= cores;
+run;
+
+proc import 
+	datafile="&caminho/outputs/DM1.xlsx"
+	dbms = xlsx 
+	out  = sicoob.tamanhos replace;
+	sheet= tamanhos;
+run;
+
+proc import 
+	datafile="&caminho/outputs/DM1.xlsx"
+	dbms = xlsx 
+	out  = sicoob.estados replace;
+	sheet= estados;
+run;
+
+proc import 
+	datafile="&caminho/outputs/DM1.xlsx"
+	dbms = xlsx 
+	out  = sicoob.regioes replace;
+	sheet= 'regiões'n;
 run;
