@@ -9,7 +9,7 @@
  */
 
 %macro importar_dados(tabela, planilha);
-	proc import datafile="&caminho/output/DM1.xlsx" dbms=xlsx 
+	proc import datafile="&caminho/outputs/DM1.xlsx" dbms=xlsx 
 		out=sicoob.&tabela replace;
 		sheet="&planilha";
 	run;
