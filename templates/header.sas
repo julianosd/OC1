@@ -1,18 +1,9 @@
 /*
-
-*
-
-* Programa:
-
-* Autor:
-
-* Data:
-
-* Módulo:
-
-* Versão: 
-
-* 
-
-*/
- 
+ *
+ * Programa:
+ * Autor:
+ * Data:
+ * Módulo:
+ * Versão: 
+ * 
+ */
